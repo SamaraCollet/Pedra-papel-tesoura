@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedra, Papel e Tesoura</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Pedra, Papel e Tesoura</h1>
+        </header>
+        <h2>Qual a sua escolha?</h2>
+        <div id="selOptions" class="selOptions">
+            <div id="papel"><img class="img1" src="img/papel.jpg" alt="papel" onclick="jogar('papel')"></div>
+            <div id="pedra"><img class="img2" src="img/pedra.jpg" alt="pedra" onclick="jogar('pedra')"></div>
+            <div id="tesoura"><img class="img3" src="img/tesoura.jpg" alt="tesoura" onclick="jogar('tesoura')"></div>
+        </div>
+        <div class="result">
+            <h2>Computador:</h2>
+            <img src="img/vazio.jpg" alt="PC" id="pc">
+            <h3 id="result">Resultado...</h3>
+        </div>
+        <div class="placar">
+            <div class="jogador">
+                <h3>Jogador:</h3>
+                <div id="jogador" value="0">0</div>
+            </div>
+            <div class="comput">
+                <h3>Computador:</h3>
+                <div id="comput" value="0">0</div>
+            </div>
+        </div>
+        <div>
+            <div id="resetar" title="Reset Game" onclick="resetar()"><i class="fas fa-redo"></i></div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
